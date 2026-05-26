@@ -1,0 +1,14 @@
+# Credentials and config files
+*.yml
+*.yaml
+
+# Reports
+*.csv
+
+# Windows junk
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
