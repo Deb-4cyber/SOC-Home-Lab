@@ -9,7 +9,7 @@ $users = @(
     @{Name="Dave Miller"; SamAccountName="dmiller"; Department="Finance"}
 )
 
-$defaultPassword = (ConvertTo-SecureString "Xk9#mP2@vL7" -AsPlainText -Force)
+$defaultPassword = Read-Host "Enter default password" -AsSecureString
 
 foreach ($user in $users) {
     New-ADUser `
