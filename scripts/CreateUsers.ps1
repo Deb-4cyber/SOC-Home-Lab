@@ -26,3 +26,8 @@ foreach ($user in $users) {
 }
 
 Write-Host "All users created successfully." -ForegroundColor Cyan
+
+
+# Note: Never hardcode credentials in scripts.
+# This script uses Read-Host to prompt for password at runtime.
+# Original version contained a hardcoded credential, detected by GitGuardian and remediated immediately.
